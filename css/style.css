@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw * 16 / 1920);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Futura PT', sans-serif;
+  background: #F4F4F4;
+  overflow: hidden;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+a.text:active,
+a.text:hover,
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.875rem 0 1.125rem;
+  width: 100%;
+  height: 4.94rem;
+  background: rgb(255, 255, 255);
+}
+
+.header__logo {
+  position: relative;
+}
+
+.header__logo img {
+  width: 1.19rem;
+  height: 2.04rem;
+  cursor: pointer;
+}
+
+.header__logo::before {
+  content: 'v';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  top: -0.5rem;
+  right: -2.8rem;
+  width: 2.34rem;
+  height: 1.06rem;
+  padding: 0 0.25rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.75rem;
+  font-weight: 450;
+  line-height: 0.94rem;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 0.23rem;
+  background: rgb(255, 102, 0);
+  box-sizing: border-box;
+}
+
+.header__logout {
+  cursor: pointer;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 18.13rem 1fr;
+  padding-top: 2rem;
+  background: rgb(244, 244, 244);
+  height: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 18.13rem;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding: 0 0.9375rem;
+  width: 100%;
+  height: 3.88rem;
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.active {
+  background: rgb(23, 33, 57);
+}
+
+.active .sidebar__icon path {
+  fill: rgb(244, 244, 244);
+}
+
+.sidebar__item span {
+  color: rgb(23, 33, 57);
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 1.38rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.active span {
+  color: rgb(244, 244, 244);
+}
+
+.btn-hide {
+  justify-content: center;
+}
+
+.btn-hide span {
+  color: rgb(255, 102, 0);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 1.875rem;
+  width: 100%;
+  height: 5rem;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+}
+
+.footer__link {
+  position: relative;
+  color: rgb(255, 102, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.footer__info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+  color: rgb(165, 165, 165);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.94rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translate(-50%, -50%);
+  width: 1.06rem;
+  height: 1.19rem;
+  background: url(../img/footer/doc.svg) no-repeat;
+  background-size: contain;
+}
+
+.footer__wrapper {
+  position: absolute;
+  top: 1rem;
+  left: 21.255rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.footer__save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 12.4rem;
+  height: 3.13rem;
+  color: rgb(255, 255, 255);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.13rem;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 0.06rem solid rgb(23, 33, 57);
+  border-radius: 0.31rem;
+  background: rgb(23, 33, 57);
+}
+
+.footer__cancel {
+  width: 12.15rem;
+  height: 3.13rem;
+  color: rgb(23, 33, 57);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.13rem;
+  letter-spacing: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 0.06rem solid rgb(23, 33, 57);
+  border-radius: 0.31rem;
+  background: rgb(255, 255, 255);
+}
+
+

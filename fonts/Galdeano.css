@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Galdeano';
+    src: url('Galdeano/Galdeano-Regular.eot');
+    src: local('Galdeano Regular'), local('Galdeano-Regular'),
+        url('Galdeano/Galdeano-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galdeano/Galdeano-Regular.woff2') format('woff2'),
+        url('Galdeano/Galdeano-Regular.woff') format('woff'),
+        url('Galdeano/Galdeano-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
